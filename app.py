@@ -1,5 +1,5 @@
 from flask import Flask, jsonify
-from datetime import datetime
+from datetime import datetime, timezone
 from flask_cors import CORS
 from flask_compress import Compress
 
@@ -12,7 +12,7 @@ Compress(app)
 def get_info():
     response = {
         "email": "nsikakmbre@gmail.com",
-        "current_datetime": datetime.utcnow().isoformat(),
+        "current_datetime": datetime.now(timezone.utc).isoformat(),
         "github_url": "git@github.com:Nsikak-mbre/HNG12-stage-0.git"
     }
     return jsonify(response)
