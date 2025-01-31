@@ -1,5 +1,6 @@
-Flask
-gunicorn
-gevent
-flask-cors
-flask-compress
+
+Flask==3.1.0
+Flask-Cors==5.0.0
+gevent==24.11.1
+gunicorn==23.0.0
+orjson==3.10.15
