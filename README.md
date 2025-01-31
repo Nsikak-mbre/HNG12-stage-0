@@ -19,6 +19,9 @@ This is a simple API built for HNG Stage 0 Backend Task. It returns:
   "github_url": "https://github.com/yourusername/your-repo"
 }
 
+For more information on hiring Python developers, visit:
+https://hng.tech/hire/python-developers
+
 
 How to run locally
 
