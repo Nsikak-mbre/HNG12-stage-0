@@ -18,8 +18,8 @@ app.add_middleware(
 @app.get("/")
 async def get_info():
     return {
-        "email": "nsikakmbre@gmail.com",  
-        "current_datetime": datetime.now(datetime.UTC).isoformat() + "Z",
+        "email": "nsikakmbre@gmail.com",
+        "current_datetime": datetime.utcnow().isoformat() + "Z",
         "github_url": "https://github.com/Nsikak-mbre/HNG12-stage-0"
     }
 
