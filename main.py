@@ -20,7 +20,7 @@ async def get_info():
     return {
         "email": "nsikakmbre@gmail.com",  
         "current_datetime": datetime.utcnow().isoformat() + "Z",
-        "github_url": "git@github.com:Nsikak-mbre/HNG12-stage-0.git"
+        "github_url": "https://github.com/Nsikak-mbre/HNG12-stage-0"
     }
 
 if __name__ == "__main__":
