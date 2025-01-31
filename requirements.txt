@@ -4,3 +4,4 @@ Flask-Cors==5.0.0
 gevent==24.11.1
 gunicorn==23.0.0
 orjson==3.10.15
+flask_compress==1.10.1
