@@ -1,6 +1,7 @@
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from functools import lru_cache
 from datetime import datetime
 import uvicorn
 
@@ -15,6 +16,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@lru_cache(maxsize=1)
 @app.get("/")
 async def get_info():
     return {
