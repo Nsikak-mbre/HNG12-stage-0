@@ -1,6 +1,6 @@
 # HNG Stage 0 API
 
-This is a simple API built for HNG Stage 0 Backend Task. It returns:
+This is a simple fast Python API built for HNG Stage 0 Backend Task. It returns:
 
 - My registered email
 - The current datetime (ISO 8601 format)
@@ -27,6 +27,6 @@ How to run locally
 
 git clone "repo address"
 cd your-repo
-pip install -r requirements.txt
-python app.py
+To install dependencies use  => pip install -r requirements.txt
+uvicorn main:app --reload
 ```
