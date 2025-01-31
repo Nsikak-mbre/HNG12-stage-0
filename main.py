@@ -1,7 +1,6 @@
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from functools import lru_cache
 from datetime import datetime
 import uvicorn
 
@@ -16,12 +15,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@lru_cache(maxsize=1)
 @app.get("/")
 async def get_info():
     return {
         "email": "nsikakmbre@gmail.com",  
-        "current_datetime": datetime.utcnow().isoformat() + "Z",
+        "current_datetime": datetime.now(datetime.UTC).isoformat() + "Z",
         "github_url": "https://github.com/Nsikak-mbre/HNG12-stage-0"
     }
 
